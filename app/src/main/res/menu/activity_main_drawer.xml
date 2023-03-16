@@ -29,5 +29,9 @@
             android:id="@+id/nav_map"
             android:icon="@mipmap/img"
             android:title="@string/menu_map" />
+        <item
+            android:id="@+id/nav_reminder"
+            android:icon="@mipmap/img"
+            android:title="reminder" />
     </group>
 </menu>

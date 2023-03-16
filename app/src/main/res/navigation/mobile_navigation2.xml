@@ -53,10 +53,22 @@
         <action
             android:id="@+id/action_nav_vpress_to_nav_map"
             app:destination="@id/nav_map" />
+        <action
+            android:id="@+id/action_nav_vpress_to_nav_map2"
+            app:destination="@id/nav_map" />
     </fragment>
     <fragment
         android:id="@+id/nav_map"
         android:name="com.example.databytes.map"
         android:label= "@string/menu_map"
-        tools:layout="@layout/fragment_map" />
+        tools:layout="@layout/fragment_map" >
+        <action
+            android:id="@+id/action_nav_map_to_nav_reminder"
+            app:destination="@id/nav_reminder" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_reminder"
+        android:name="com.example.databytes.Reminder"
+        android:label="Reminder"
+        tools:layout="@layout/fragment_reminder" />
 </navigation>
