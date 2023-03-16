@@ -24,6 +24,7 @@ public class Addhar_verfi_page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addhar_verfi_page);
+        //hello
         b = findViewById(R.id.psub);
         t = findViewById(R.id.addhar_input_box);
         b.setOnClickListener(new View.OnClickListener() {
