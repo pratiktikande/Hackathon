@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.databytes.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.databytes.casefolder"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_casefolder" >
+        <action
+            android:id="@+id/action_nav_gallery_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.databytes.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" >
+        <action
+            android:id="@+id/action_nav_slideshow_to_nav_gene"
+            app:destination="@id/nav_gene" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gene"
+        android:name="com.example.databytes.gene"
+        android:label="@string/menu_gene"
+        tools:layout="@layout/fragment_gene" >
+        <action
+            android:id="@+id/action_nav_gene_to_nav_vpress"
+            app:destination="@id/nav_vpress" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_vpress"
+        android:name="com.example.databytes.viewpres"
+        android:label= "@string/menu_vrpres"
+        tools:layout="@layout/fragment_viewpres" >
+        <action
+            android:id="@+id/action_nav_vpress_to_nav_map"
+            app:destination="@id/nav_map" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_map"
+        android:name="com.example.databytes.map"
+        android:label= "@string/menu_map"
+        tools:layout="@layout/fragment_map" />
+</navigation>

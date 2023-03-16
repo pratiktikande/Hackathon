@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".medicine">
+
+    <TextView
+        android:id="@+id/title_txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medicine Folder Upload"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/view_selected_document_window1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/document_selection_btn1"
+        android:layout_below="@id/title_txt1"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+
+    <Button
+        android:id="@+id/document_selection_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:width="150dp"
+        android:text="Document Selection" />
+
+    <Button
+        android:id="@+id/document_upload_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:width="150dp"
+        android:text="Document Upload"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</RelativeLayout>

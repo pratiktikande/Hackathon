@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/easymed"
+    tools:context=".hlogin">
+
+    <TextView
+        android:id="@+id/Hlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Select the method of authentication"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textFontWeight="@integer/material_motion_duration_medium_2"
+        android:textSize="30sp"
+        tools:targetApi="p" />
+
+    <Button
+        android:id="@+id/Scanner_btn"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Hlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:width="200dp"
+        android:backgroundTint="@color/black"
+        android:text="QR Scanner"
+        android:textAlignment="center"
+        android:textColor="@color/awhite" />
+
+    <Button
+        android:id="@+id/Adhhar_btn"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Scanner_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:width="200dp"
+        android:backgroundTint="@color/awhite"
+        android:text="create a prescription"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+</RelativeLayout>
