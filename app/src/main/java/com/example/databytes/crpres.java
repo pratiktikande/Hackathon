@@ -36,7 +36,6 @@ public class crpres extends AppCompatActivity {
         }
         t.setText("Welcome Dr."+dn);
         B = findViewById(R.id.crpresbut);
-        Name = findViewById(R.id.ptname);
         Pre = findViewById(R.id.ptpre);
 
         B.setOnClickListener(new View.OnClickListener() {

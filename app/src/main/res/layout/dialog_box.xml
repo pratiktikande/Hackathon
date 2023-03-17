@@ -13,6 +13,14 @@
         android:text="Change Name"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You Can Change Guardian name here">
+
+    </TextView>
+
     <EditText
         android:id="@+id/userInput"
         android:layout_width="match_parent"
