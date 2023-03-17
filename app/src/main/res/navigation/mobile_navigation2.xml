@@ -70,5 +70,15 @@
         android:id="@+id/nav_reminder"
         android:name="com.example.databytes.Reminder"
         android:label="Reminder"
-        tools:layout="@layout/fragment_reminder" />
+        tools:layout="@layout/fragment_reminder" >
+        <action
+            android:id="@+id/action_nav_reminder_to_nav_medical"
+            app:destination="@id/nav_medical" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_medical"
+        android:name="com.example.databytes.Medical"
+        android:label="Medical"
+        tools:layout="@layout/fragment_medical" />
+
 </navigation>
