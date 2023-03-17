@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="#EEDFDE"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -13,7 +14,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Use your fingerprint to login"
-        android:textColor="#fafafa"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         android:textSize="18sp" />
 
     <ImageView
@@ -33,13 +35,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginVertical="20dp"
-        android:background="#fafafa"
+        android:background="@drawable/button_new"
         android:text="Login" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button_style_new"
         android:text="Use Login Password instead" />
 
     <EditText
@@ -50,5 +53,19 @@
         android:inputType="textPassword"
         android:visibility="invisible"
         />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="159dp"
+        android:layout_height="82dp"
+        app:srcCompat="@drawable/splash" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="143dp"
+        android:layout_height="79dp"
+        android:text="Design By Data-Bytes"
+        android:textSize="22dp"
+        android:textStyle="bold" />
 
 </LinearLayout>

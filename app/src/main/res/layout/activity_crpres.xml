@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/easymed"
+    android:background="#FFFDD0"
     tools:context=".crpres">
 
     <TextView
@@ -15,9 +15,9 @@
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="263dp" />
+        tools:layout_editor_absoluteY="242dp" />
 
     <EditText
         android:id="@+id/ptpre"
@@ -33,37 +33,39 @@
         android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cprestext"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:backgroundTint="@color/awhite"
         android:id="@+id/crpresbut"
         android:layout_width="209dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
+        android:background="@drawable/button_style_new"
+        android:backgroundTint="@color/awhite"
         android:text="Submit"
         app:icon="@drawable/bar"
         app:iconTint="#354BC3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintHorizontal_bias="0.559"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ptpre"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/crpresdname"
         android:layout_width="301dp"
         android:layout_height="39dp"
         android:layout_marginTop="88dp"
+        android:hint="Enter Doctor name"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/cprestext"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.765" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/easymed"
+    android:background="#EEDFDE"
     tools:context=".hos_scan_res">
 
     <TextView
@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="264dp"
+        android:layout_marginTop="304dp"
         android:text="Aadhaar"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -255,8 +255,8 @@
         android:id="@+id/tkk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="16dp"
         android:text="If you don't have mediclaim, type &quot;No&quot;."
         app:layout_constraintStart_toStartOf="@+id/tmc"
         app:layout_constraintTop_toBottomOf="@+id/emcm" />
@@ -266,7 +266,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Aadhar card Number"
         android:inputType="number"
