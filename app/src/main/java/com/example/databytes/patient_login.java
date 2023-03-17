@@ -23,7 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 public class patient_login extends AppCompatActivity {
     private EditText un,pass;
     private CheckBox cb;
-    private Button b;
+    private Button b,b1;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +32,17 @@ public class patient_login extends AppCompatActivity {
         un= findViewById(R.id.Username);
         pass = findViewById(R.id.Password);
         cb = findViewById(R.id.cb2);
+        b1 = findViewById(R.id.buuton);
 
         b = findViewById(R.id.button3);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(patient_login.this, "opening physical Activity", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(patient_login.this, patient_new.class);
+                startActivity(intent);
+            }
+        });
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
