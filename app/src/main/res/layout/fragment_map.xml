@@ -9,10 +9,12 @@
 
     <Button
         android:id="@+id/map1"
-        android:layout_width="175dp"
-        android:layout_height="0dp"
+        android:layout_width="200dp"
+        android:layout_height="88dp"
         android:layout_marginBottom="342dp"
+        android:background="@drawable/button_style_new"
         android:text="Button"
+        android:textColorLink="#8A7979"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

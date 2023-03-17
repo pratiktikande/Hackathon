@@ -20,6 +20,7 @@
         android:layout_marginEnd="124dp"
         android:layout_marginBottom="632dp"
         android:ems="10"
+        android:textStyle="bold"
         android:hint="Enter the OTP"
         android:textColorHint="@color/black"
         android:textColor="@color/black"
@@ -27,6 +28,7 @@
 
     <EditText
         android:id="@+id/gni"
+        android:textStyle="bold"
         android:layout_width="321dp"
         android:layout_height="wrap_content"
         android:textColorHint="@color/black"
@@ -64,7 +66,7 @@
         android:layout_marginBottom="409dp"
         android:enabled="false"
         android:text="Verify OTP"
-        android:background="@drawable/button_style_new"
+        android:background="#7FFFD4"
         android:textColor="@color/black"
         android:textSize="20dp" />
 

@@ -33,6 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="25dp"
             android:ems="10"
+            android:textStyle="bold"
             android:inputType="textPersonName"
             android:hint="UserName" />
 
@@ -42,6 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="25dp"
             android:ems="10"
+            android:textStyle="bold"
             android:hint="Password" />
 
         <EditText
@@ -50,6 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="25dp"
             android:ems="10"
+            android:textStyle="bold"
             android:inputType="textPassword"
             android:hint="Confirm Password" />
 
@@ -57,6 +60,7 @@
             android:id="@+id/cb1"
             android:layout_width="175dp"
             android:layout_height="52dp"
+            android:textStyle="bold"
             android:layout_marginLeft="20dp"
             android:text="Remember Me" />
 
@@ -65,7 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="30dp"
-            android:background="@drawable/backgroundbutton"
+            android:background="@drawable/button_new"
             android:text="REGISTER"
             android:textColor="@color/white1"
             android:textStyle="bold" />

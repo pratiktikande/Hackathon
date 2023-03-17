@@ -37,6 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:ems="10"
+            android:textStyle="bold"
             android:hint="Registeration No"
             android:inputType="textPersonName" />
 
@@ -46,6 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:ems="10"
+            android:textStyle="bold"
             android:hint="Enter Username"
             android:inputType="textPersonName" />
 
@@ -55,6 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:ems="10"
+            android:textStyle="bold"
             android:inputType="textPassword"
             android:hint="Pasword"/>
 
@@ -63,6 +66,7 @@
             android:id="@+id/cb3"
             android:layout_width="156dp"
             android:layout_height="52dp"
+            android:textStyle="bold"
             android:text="Remember Me" />
 
         <FrameLayout

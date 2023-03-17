@@ -34,6 +34,7 @@
         android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:layout_marginVertical="20dp"
         android:background="@drawable/button_new"
         android:text="Login" />
@@ -42,6 +43,7 @@
         android:id="@+id/button7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:background="@drawable/button_style_new"
         android:text="Use Login Password instead" />
 
@@ -60,12 +62,6 @@
         android:layout_height="82dp"
         app:srcCompat="@drawable/splash" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="143dp"
-        android:layout_height="79dp"
-        android:text="Design By Data-Bytes"
-        android:textSize="22dp"
-        android:textStyle="bold" />
+
 
 </LinearLayout>

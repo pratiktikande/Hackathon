@@ -33,6 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="25dp"
             android:ems="10"
+            android:textStyle="bold"
             android:inputType="textPersonName"
             android:hint="Hospital Name" />
 
@@ -42,6 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="25dp"
             android:ems="10"
+            android:textStyle="bold"
             android:inputType="textPersonName"
             android:hint="Hospital Registration No" />
 
@@ -51,6 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="25dp"
             android:ems="10"
+            android:textStyle="bold"
             android:inputType="textPassword"
             android:hint="Password" />
 
@@ -60,6 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="25dp"
             android:ems="10"
+            android:textStyle="bold"
             android:inputType="textPassword"
             android:hint="Confirm Password" />
 

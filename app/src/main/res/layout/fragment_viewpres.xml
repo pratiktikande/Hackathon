@@ -5,19 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".viewpres"
-    >
+    android:background="#DFDEEE">
 
 
     <EditText
         android:id="@+id/vprname"
         android:layout_width="265dp"
         android:layout_height="48dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="64dp"
         android:ems="10"
         android:hint="Enter Doctor Name"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintHorizontal_bias="0.575"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,10 +25,10 @@
         android:id="@+id/vprbut"
         android:layout_width="302dp"
         android:layout_height="42dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="60dp"
         android:text="View Prescription"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintHorizontal_bias="0.596"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vprname" />
 
