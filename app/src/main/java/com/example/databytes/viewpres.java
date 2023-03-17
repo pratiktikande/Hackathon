@@ -25,11 +25,16 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
+
 public class viewpres extends Fragment {
     private FragmentViewpresBinding binding;
     EditText ed;
     TextView t1,t2;
-    Button b;
+    Button b,b1;
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -42,10 +47,12 @@ public class viewpres extends Fragment {
         b = root.findViewById(R.id.vprbut);
         t1 = root.findViewById(R.id.vprt1);
         t2 = root.findViewById(R.id.vprt2);
+        b1 = root.findViewById(R.id.share);
+        String name = ed.getText().toString();
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String name = ed.getText().toString();
+
                 Activity activity = getActivity();
                 if(name.isEmpty()){
                     Toast.makeText(activity, "Enter Valid Doctor name", Toast.LENGTH_SHORT).show();
@@ -76,6 +83,22 @@ public class viewpres extends Fragment {
                         Toast.makeText(activity, "Enter Correct ID", Toast.LENGTH_SHORT).show();
                     }
                 }
+            }
+        });
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                double temp = Math.random();
+                SimpleDateFormat date1 = new SimpleDateFormat("dd:MM:yyyy");
+                String date2 = date1.format(new Date());
+                SharedPreferences preferences = activity.getSharedPreferences("checkbox",activity.MODE_PRIVATE);
+                String uname = preferences.getString("patient_name","");
+                DatabaseReference ref= FirebaseDatabase.getInstance().getReference("/"+uname+"/prescriptions/");
+
+//                ref.removeValue();
+//                Map<String, Object> updates = new HashMap<String,Object>();
+//                updates.put("temp", temp);
+//                ref.updateChildren(updates);
             }
         });
         return root;

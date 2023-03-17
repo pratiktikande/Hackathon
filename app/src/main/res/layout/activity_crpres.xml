@@ -7,49 +7,17 @@
     android:background="@drawable/easymed"
     tools:context=".crpres">
 
-    <EditText
-        android:id="@+id/ptname"
-        android:layout_width="330dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="124dp"
-        android:ems="10"
-        android:hint="Enter Patient Username"
-        android:inputType="textPersonName"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.197"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/cprestext"
         android:layout_width="295dp"
         android:layout_height="42dp"
-        android:layout_marginTop="100dp"
         android:text="Write Your Findings below"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.137"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ptname" />
-
-    <EditText
-        android:id="@+id/ptdate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="enter today's date"
-        android:inputType="date"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/cprestext"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ptname"
-        app:layout_constraintVertical_bias="0.338" />
+        tools:layout_editor_absoluteY="263dp" />
 
     <EditText
         android:id="@+id/ptpre"
@@ -90,12 +58,12 @@
         android:id="@+id/crpresdname"
         android:layout_width="301dp"
         android:layout_height="39dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="88dp"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/ptname"
+        app:layout_constraintBottom_toTopOf="@+id/cprestext"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
