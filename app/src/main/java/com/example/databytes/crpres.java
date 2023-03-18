@@ -58,7 +58,7 @@ public class crpres extends AppCompatActivity {
 //                        DatabaseReference node1= db.getReference("/Doctors/"+k);
                         SimpleDateFormat date1 = new SimpleDateFormat("dd:MM:yyyy");
                         String date2 = date1.format(new Date());
-                        DatabaseReference ref= FirebaseDatabase.getInstance().getReference("/"+name+"/prescriptions/"+date2);
+                        DatabaseReference ref= FirebaseDatabase.getInstance().getReference("/"+name);
                         Map<String, Object> updates = new HashMap<String,Object>();
                         updates.put(dname, pre);
                         ref.updateChildren(updates);

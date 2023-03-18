@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.databytes">
+    package="com.example.databytes" >
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.USE_BIOMETRIC" />
@@ -19,88 +19,88 @@
         android:roundIcon="@drawable/healthcare"
         android:supportsRtl="true"
         android:theme="@style/Theme.Emergon"
-        tools:targetApi="31">
+        tools:targetApi="31" >
         <activity
-            android:name="com.example.databytes.crpres"
+            android:name=".crpres"
             android:exported="false"
-            android:parentActivityName="com.example.databytes.hlogin"/>
+            android:parentActivityName=".hlogin" />
         <activity
-            android:name="com.example.databytes.Document_upload_page"
-            android:exported="false">
+            android:name=".Document_upload_page"
+            android:exported="false" >
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name="com.example.databytes.hos_scan_res"
+            android:name=".hos_scan_res"
             android:exported="false"
-            android:parentActivityName="com.example.databytes.hlogin"/>
+            android:parentActivityName=".hlogin" />
         <activity
-            android:name="com.example.databytes.neurology"
+            android:name=".neurology"
             android:exported="false"
             android:label="Neurology"
-            android:parentActivityName="com.example.databytes.casefolder" />
+            android:parentActivityName=".casefolder" />
         <activity
-            android:name="com.example.databytes.skin"
+            android:name=".skin"
             android:exported="false"
             android:label="Dermatology"
-            android:parentActivityName="com.example.databytes.casefolder" />
+            android:parentActivityName=".casefolder" />
         <activity
-            android:name="com.example.databytes.emergency"
+            android:name=".emergency"
             android:exported="false"
             android:label="Cardiology"
-            android:parentActivityName="com.example.databytes.casefolder" />
+            android:parentActivityName=".casefolder" />
         <activity
-            android:name="com.example.databytes.medicine"
+            android:name=".medicine"
             android:exported="false"
             android:label="Medicine"
-            android:parentActivityName="com.example.databytes.casefolder" />
+            android:parentActivityName=".casefolder" />
         <activity
-            android:name="com.example.databytes.gaurdian_list_view"
+            android:name=".gaurdian_list_view"
             android:exported="false"
             android:label="Guardian List"
-            android:parentActivityName="com.example.databytes.ui.slideshow.SlideshowFragment" />
+            android:parentActivityName=".ui.slideshow.SlideshowFragment" />
         <activity
-            android:name="com.example.databytes.Scanner_page"
+            android:name=".Scanner_page"
             android:exported="false" />
         <activity
-            android:name="com.example.databytes.Addhar_verfi_page"
+            android:name=".Addhar_verfi_page"
             android:exported="false" />
         <activity
-            android:name="com.example.databytes.hlogin"
+            android:name=".hlogin"
             android:exported="false" />
         <activity
-            android:name="com.example.databytes.bio"
+            android:name=".bio"
             android:exported="false" />
         <activity
-            android:name="com.example.databytes.patient"
+            android:name=".patient"
             android:exported="false"
             android:label="@string/title_activity_patient"
             android:logo="@mipmap/emergon_logo"
             android:theme="@style/Theme.Emergon.NoActionBar" />
         <activity
-            android:name="com.example.databytes.hospital_new"
+            android:name=".hospital_new"
             android:exported="false"
             android:label="Sign Up"
-            android:parentActivityName="com.example.databytes.hospital_login" />
+            android:parentActivityName=".hospital_login" />
         <activity
-            android:name="com.example.databytes.hospital_login"
+            android:name=".hospital_login"
             android:exported="false"
             android:label="Hospital Login"
-            android:parentActivityName="com.example.databytes.MainActivity" />
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:name="com.example.databytes.patient_new"
+            android:name=".patient_new"
             android:exported="false"
             android:label="Patient New Login"
-            android:parentActivityName="com.example.databytes.patient_login" />
+            android:parentActivityName=".patient_login" />
         <activity
-            android:name="com.example.databytes.patient_login"
+            android:name=".patient_login"
             android:exported="false"
             android:label="Patient&apos;s login"
-            android:parentActivityName="com.example.databytes.MainActivity" />
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:name="com.example.databytes.MainActivity"
-            android:exported="true">
+            android:name=".MainActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -108,7 +108,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.databytes.CaptureAct"
+            android:name=".CaptureAct"
             android:screenOrientation="fullSensor"
             android:stateNotNeeded="true"
             android:windowSoftInputMode="stateAlwaysHidden" />

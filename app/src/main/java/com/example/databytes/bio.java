@@ -74,7 +74,7 @@ public class bio extends AppCompatActivity {
                 super.onAuthenticationFailed();
             }
         });
-        final BiometricPrompt.PromptInfo promptInfo = new BiometricPrompt.PromptInfo.Builder().setTitle("EMERGON")
+        final BiometricPrompt.PromptInfo promptInfo = new BiometricPrompt.PromptInfo.Builder().setTitle("LIFY")
                 .setDescription("Use your fingerprint to login ").setNegativeButtonText("Cancel").build();
         loginbutton.setOnClickListener(new View.OnClickListener() {
             @Override

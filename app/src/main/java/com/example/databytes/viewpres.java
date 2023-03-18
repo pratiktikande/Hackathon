@@ -48,11 +48,11 @@ public class viewpres extends Fragment {
         t1 = root.findViewById(R.id.vprt1);
         t2 = root.findViewById(R.id.vprt2);
         b1 = root.findViewById(R.id.share);
-        String name = ed.getText().toString();
+
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                String name = ed.getText().toString();
                 Activity activity = getActivity();
                 if(name.isEmpty()){
                     Toast.makeText(activity, "Enter Valid Doctor name", Toast.LENGTH_SHORT).show();
@@ -62,6 +62,7 @@ public class viewpres extends Fragment {
 
                         SharedPreferences preferences = activity.getSharedPreferences("checkbox",activity.MODE_PRIVATE);
                         String uname = preferences.getString("patient_name","");
+
                         DatabaseReference node= db.getReference("/"+uname+"/"+name);
 
                         node.addValueEventListener(new ValueEventListener() {

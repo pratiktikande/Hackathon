@@ -39,7 +39,7 @@ import java.util.concurrent.TimeUnit;
 
 public class SlideshowFragment extends Fragment {
     private FragmentSlideshowBinding binding;
-    EditText phone, otp,gp;
+    EditText phone, otp1,gp;
     Button btngenOTP, btnverify,vg;
     ImageButton ib;
     FirebaseAuth mAuth;
@@ -55,7 +55,7 @@ public class SlideshowFragment extends Fragment {
         binding = FragmentSlideshowBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         phone = root.findViewById(R.id.phone);
-        otp = root.findViewById(R.id.otp);
+        otp1 = root.findViewById(R.id.otp);
         ib = root.findViewById(R.id.imageButton);
         btngenOTP = root.findViewById(R.id.btngenerateOTP);
         btnverify =root.findViewById(R.id.btnverifyOTP);
@@ -111,12 +111,12 @@ public class SlideshowFragment extends Fragment {
             @Override
             public void onClick(View v)
             {
-                if(TextUtils.isEmpty(otp.getText().toString()))
+                if(TextUtils.isEmpty(otp1.getText().toString()))
                 {
                     Toast.makeText(activity, "Wrong OTP Entered", Toast.LENGTH_SHORT).show();
                 }
                 else
-                    verifycode(otp.getText().toString());
+                    verifycode(otp1.getText().toString());
             }
         });
 

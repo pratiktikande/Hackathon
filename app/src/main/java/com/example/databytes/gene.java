@@ -1,6 +1,7 @@
 package com.example.databytes;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -37,6 +38,7 @@ public class gene extends Fragment {
         iv = root.findViewById(R.id.ivp);
         b = root.findViewById(R.id.gene);
         gq = root.findViewById(R.id.gqr);
+
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
